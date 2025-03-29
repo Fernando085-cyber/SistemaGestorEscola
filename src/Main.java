@@ -1,10 +1,9 @@
 
-import models.Aluno;
-import models.Escola;
-import models.Professor;
+import models.*;
 
 public static void main(String[] args) {
     Escola escola = new Escola("Escola Modelo");
+
 
     Aluno aluno1 = new Aluno("Carlos Silva", 15, "A123");
     Aluno aluno2 = new Aluno("Mariana Souza", 16, "A456");
@@ -20,6 +19,10 @@ public static void main(String[] args) {
     escola.listarAlunos();
     escola.listarProfessores();
 
+    System.out.println();
+
+    Turma turma = new Turma("Java",2025,professor1);
+    Disciplina disciplina = new Disciplina("Ti",80,professor1);
 }
 
 
